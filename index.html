@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="converter-container">
+        <h2>Conversor de Moedas</h2>
+        <p class="subtitle">Cotações atualizadas em tempo real</p>
+
+        <form id="converter-form">
+            <div class="input-group">
+                <label for="amount">Valor a converter:</label>
+                <input type="number" id="amount" placeholder="Ex: 100" required min="0.01" step="0.01">
+            </div>
+
+            <div class="selection-group">
+                <div class="input-group">
+                    <label for="from-currency">De:</label>
+                    <select id="from-currency">
+                        <option value="USD">USD - Dólar Americano</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="BTC">BTC - Bitcoin</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="to-currency">Para:</label>
+                    <select id="to-currency">
+                        <option value="BRL" selected>BRL - Real Brasileiro</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-btn">Converter</button>
+        </form>
+
+        <div id="result-container" class="result-container hidden">
+            <p id="result-text">Carregando...</p>
+            <span id="update-time"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

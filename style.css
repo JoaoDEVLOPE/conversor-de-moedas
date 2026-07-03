@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #065f46;
+    background: -webkit-linear-gradient(to right, #064e3b, #059669);
+    background: linear-gradient(135deg, #022c22 0%, #065f46 60%, #10b981 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.converter-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+input:focus, select:focus {
+    border-color: #059669;
+}
+
+.selection-group {
+    display: flex;
+    gap: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #059669;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #047857;
+}
+
+.result-container {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: #e6f4ea;
+    border-left: 4px solid #059669;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#result-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #065f46;
+}
+
+#update-time {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+}
+
+.hidden {
+    display: none;
+}
